@@ -1,5 +1,3 @@
-
-
 const recordClick = function (recorderBtn) {
   this.recordingEnabled = false
   return () => {
@@ -22,7 +20,8 @@ const onload = () => {
   const deps = {
     view,
     media,
-    room
+    room,
+    socketBuilder
   }
 
   Business.initialize(deps)
